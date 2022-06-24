@@ -1,0 +1,35 @@
+.row{
+    color: white;
+}
+
+.row_container{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.row_images{
+    object-fit: contain;
+    width: 100%;
+    max-height: 150px;
+    /* margin-right: 10px; */
+    transition: transform 450ms;
+    padding: 10px;
+}
+
+.row_images:hover{
+    transform: scale(1.08);
+}
+
+
+.row_container::-webkit-scrollbar{
+    display:none;
+}
+
+.large_row{
+    max-height: 250px;
+}
+
+.large_row:hover{
+    transform: scale(1.09);
+}
